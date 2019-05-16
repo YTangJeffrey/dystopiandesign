@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Main.js"></script>
+    <style>
+        @font-face{
+            font-family:"myfont";
+            src:url("Univers.otf");
+            
+        }
+        @font-face{
+            font-family:"myfontB";
+            src:url('UniversB.otf');
+            
+        }
+
+        .clikable{
+            display: flexbox;
+            cursor: pointer;
+            }
+        h1{
+            color:white;
+            font-size:50px;
+            font-family:"myfontB";
+            }
+        h2{
+            color:white;
+            font-size:30px;
+            font-family:"myfont";
+
+        }
+    
+        p{
+            color:white;
+            font-size: 50px;
+            font-family:"myfont";
+            }
+        a{
+            font-family:"myfontB";
+            font-size:50px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="screen" style="z-index:10; left: 0px; top:0px; background:black; height:100%; width:100%; position:fixed;opacity:1;transition: 0.5s">
+        <div style="margin-left:30%;">
+            <h1>Relative Informational Asymmetry </h1>
+            <h2>
+            It’s a social structure in which no one knows everything or have access to all the information. When it comes to decision making, people have to rely on themselves to make a decision based on their own interpretation and knowledge scope. People are eager to utilize their own advantageous information position to get benefit from others by misleading them in the field they are not familiar with. 
+            <br>
+            <br>
+            <br>
+            </h2></div>
+            <div style="position:fixed; margin-left: 30%;bottom:20px;">
+                    <img src="RIA.jpg" height="200px;" ></img>
+                </div>
+   <div class="clikable" style="width: 50%;" >
+       <p onclick= "enter()">ENTER→</p>
+    </div>
+    //firstpage//
+    </div>
+
+    <div style="position:relative; z-index: 2;">
+            <a href = "Main.html">←EXIT</a>    
+    </div>
+    
+    <img style = "position: fixed; z-index:3;" src="girl.png"> </img>
+    <img style = "position: fixed" src="02.png"> </img>
+    <div id="nmsl"  style ="display:block;font-size:40px; background:white;">
+        <p style="color:black;">Dystopian Visual Design and Information Asymmetry 
+        <br>
+        Visual design, as for its application in commercial and practical ground, has a very narrow evaluation standard. We constantly have an awareness of the audience and our design’s impact on audience evaluate the efficacy of our work. Stuffing our creativity into the mold of the expectation of the existing audience is a painful process yet it guarantees the success based on the rules of the industry. If visual designers’ only job is to convince the audience of what they are being told and then react in the way designers desired, graphic design is in nature, getting progressively manipulative and sometimes deceiving. To serve such purpose and to conform to the mono-polarized standard of visual design, initiators of the information may easily take a dystopian routine in design, stuck in the dilemma of the interplay between the efficacy of the design and the competitive industry, and start distorting the truth that and misleading people’s perception using the “miscommunication” design, by doing what we have kept doing, which is utilizing the disparity of information or in a more dystopian sense, abuse of the miscommunication and monopoly of the information. Designers are always at an advantageous position against the receiver of the design because designers define their audience carefully and examine them closely. Meanwhile, targeted receivers stay a vulnerable position against this graphic terrorism, an enforced submersion by the excessive amount of propagandistic information. Such inequality benefits all initiators of the information and visual design become their evil conspirators. The gap created from this information inequality that separates the group that gives the message and the group that are given the messages is typical feature of a dystopian society. 
+
+        <p> 
+    </div>
+        <div class="clikable" id="hidden" style="display:block;position:absolute;z-index:5;left:500px;top:400px;">
+            <img id = "pineapple" onclick= "erase()" src="Pineapple.png" height="1000px";style="transform:rotate(20deg);user-select: none;-moz-user-select: none;-webkit-user-select: none;">
+                
+            </img>
+        </div>
+    </div>
+    <div class="clikable" id="hidden2" style="display:block;position:absolute;z-index:5;left:-200px;top:100px;" >
+        <img id = "OnBlack" onclick= "randomize()" src="OnBlack.png" height="750px" style="transform:rotate(0deg);user-select: none;-moz-user-select: none;-webkit-user-select: none;">
+            
+        </img>
+    </div>
+    <div class="clikable" id="hidden3" style="position:absolute;z-index:5;left:200px;top:1000px;" >
+            <img id = "face" onclick= "randomize3()" src="face.png" height="700px" style="transform:rotate(90deg);user-select: none;-moz-user-select: none;-webkit-user-select: none;">
+                
+            </img>
+    </div>
+    <div class="clikable" id="hidden4" style="position:absolute;z-index:5;left:600px;top:1400px;" >
+            <img id = "face" onclick= "randomize4()" src="carrot.png" height="600px" style="transform:rotate(90deg);user-select: none;-moz-user-select: none;-webkit-user-select: none;">
+                
+            </img>
+    </div>
+    <div class="clikable" id="hidden5" style="position:absolute;z-index:5;left:30px;top:1000px;" >
+            <img id = "face" onclick= "randomize5()" src="MC.png" height="800px" style="transform:rotate(90deg);user-select: none;-moz-user-select: none;-webkit-user-select: none;">
+                
+            </img>
+    </div>
+
+
+
+    
+       
+            
+        
+</body>
+</html>

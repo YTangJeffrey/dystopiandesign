@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Main.js"></script>
+    <style>
+           @font-face{
+            font-family:"myfont";
+            src:url('Univers.otf');
+            
+        }
+        @font-face{
+            font-family:"myfontB";
+            src:url('UniversB.otf');
+            
+        }
+
+        .box{
+        position: absolute;
+        left:10px;
+        top:200px;
+        right:10px;
+        bottom: 10px; 
+        display:grid; 
+        grid-template-columns: 50% 50%;
+
+        }
+        h4{
+            display: inline;
+            font-family:"myfont";
+            font-size: 30px;
+            cursor:pointer;
+            background: -webkit-linear-gradient(0deg,white,white,black);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+
+        h3{
+            font-family:"myfont";
+            font-size: 30px;
+            cursor:pointer;
+            background: -webkit-linear-gradient(180deg,white,white,black);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;}
+
+
+        h5{
+            font-family: "myfont";
+            color: white;
+            font-size: 50px;
+        }   
+
+
+
+
+        h1{
+            font-family: "myfontB";
+            color: white;
+            font-size: 50px;
+        }
+        
+        h2{
+            font-family:"myfont";
+            color:white;
+            font-size: 30px;
+        }
+        #left{
+            font-family:"myfont";
+            }
+
+        #right{
+            font-family:"myfont"
+        }
+        .hover{
+            cursor:pointer;
+        }
+
+        a{
+            font-family:"myfontB";
+            font-size:50px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+        <div id="screen" style="z-index:10; left: 0px; top:0px; background:black; height:100%; width:100%; position:fixed;opacity:1;transition: 0.5s">
+                <div style="margin-left:30%;">
+                    <h1>Relative Informational Symmetry </h1>
+                    <h2>
+                            It’s a social structure in which no one knows everything or have access to all the information. However, when it comes to decision making, people will be assisted and provided with the required information to make the optimal decision. 
+
+                    </h2></div>
+                    <div style="position:fixed; margin-left: 30%;bottom:0px;">
+                            <img src="RIS.jpg" height="300px;" ></img>
+                        </div>
+           <div class="clikable" style="margin-left: 20px;">
+               <h5 style = "cursor:pointer;" onclick= "enter()">Enter→</h5>
+               
+            </div>
+            //firstpage//
+            </div>
+            
+        <div style="position:fixed;">
+                    <a href="Main.html">←EXIT</a>
+        </div>
+    <div class = "box" >
+        
+            <div class = "hover" id="left" style = "grid-column: 1/3;transition: 1s; display: grid;" onclick = "clickleft()">
+                <div style="position:fixed; margin-left: 0%;bottom:0px;opacity: 0.8">
+                        <img src="right.png" height="600px;" ></img>
+                    </div>
+
+            <h3>Back to design, what would the design be like under a system of different level of      transparency? Actually, design as a tool that we rely on for communication, its         strategy reflects the respective information transparency of the society that employs       it. <br> 
+
+                    Take our contemporary world as the example, design is becoming gradually universal, which means, design is made in way that trying to be understandable for a wider audience beyond the language and cultural barriers, like a logo. However, the more universal design doesn’t in any way guarantee the informational transparency as it can potentially do, due to the commercial background it grows out of. Design are made universal to spread the distorted information or to encourage the audience giving up independent thinking in order to persuade the mass public of the information that they are given: visual design is becoming miscommunication design. The advantage of the universal design is its capability to communicate a relatively complicated message that everyone can understand. But such advantage is now turned against the audience. The relative position of the receivers and the initiators of the information is expected to stay at a healthy balance in which the receivers are able to make their independent decisions and initiators are able to forward the information to the desired audience with the minimum waste of resources. Nevertheless, when such subtle balance is upset, visual design will quickly fall towards a dystopian end and its problems around its nature will be exposed. 
+                    
+                </h3>
+            
+            </div>
+       
+            <div class= "hover "id= "right" style = "transition-duration: 1s;grid-column: 1/3;opacity:0%; display:none" align = "right" onclick = "clickright()">
+                <div style="position:fixed; margin-left: 60%;bottom:0px;">
+                        <img src="left.png" height="600px;" ></img>
+                    </div>
+                
+                <h4>Back to design, what would the design be like under a system of different level of transparency? Actually, design as a tool that we rely on for communication, its strategy reflects the respective information transparency of the society that employs it.  <br>
+
+                        Take our contemporary world as the example, design is becoming gradually universal, which means, design is made in way that trying to be understandable for a wider audience beyond the language and cultural barriers, like a logo. However, the more universal design doesn’t in any way guarantee the informational transparency as it can potentially do, due to the commercial background it grows out of. Design are made universal to spread the distorted information or to encourage the audience giving up independent thinking in order to persuade the mass public of the information that they are given: visual design is becoming miscommunication design. The advantage of the universal design is its capability to communicate a relatively complicated message that everyone can understand. But such advantage is now turned against the audience. The relative position of the receivers and the initiators of the information is expected to stay at a healthy balance in which the receivers are able to make their independent decisions and initiators are able to forward the information to the desired audience with the minimum waste of resources. Nevertheless, when such subtle balance is upset, visual design will quickly fall towards a dystopian end and its problems around its nature will be exposed. 
+                        
+                </h4>
+            </div>
+        
+    </div>   
+</body>
+</html>
